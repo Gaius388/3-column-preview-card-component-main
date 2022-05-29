@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    max-width: 1440px;
+}
+.main{
+    display: grid;
+    /* height: auto; */
+    justify-content: center;
+    margin-top: 130px;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: 1, auto;
+    color: hsla(0, 0%, 100%, 0.75);
+} 
+button{
+    border-radius: 30px;
+    padding: 8px 15px;
+    color: hsl(0, 0%, 95%);
+    border: 2px solid ;
+    background-color:transparent;
+    border-color: white;
+    font-size: 11px;
+    font-family: 'Lexend Deca', sans-serif;
+    
+}
+button:hover{
+    background-color: hsl(0, 0%, 95%);
+    color: initial;
+}
+.click-on{
+    padding-bottom: 10px;
+}
+img{
+    width: 30px;
+    height: 20px;
+}
+main h1{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display';
+    font-size: 30px;
+    padding: 20px 0 20px 0;
+    opacity: 0.9;
+}
+p{
+    padding-bottom: 65px;
+    font-size: 12px;
+    font-weight: 50;
+    opacity: 0.9;
+}
+section{
+    padding: 25px 30px;
+}
+.sedan-section{
+    background-color: hsl(31, 77%, 52%);
+    grid-column: 1/2;
+    grid-row: 1; 
+    border-radius: 10px 0 0 10px;
+}
+.suvs-section{
+    background-color: hsl(184, 100%, 22%);
+    grid-column: 2/3;
+    grid-row: 1;
+}
+.luxury-section{
+    background-color: hsl(179, 100%, 13%);
+    grid-column: 3/4;
+    grid-row: 1;
+    border-radius: 0 10px 10px 0;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align:center;
+    padding-top: 5px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width:768px) {
+    
+    .main{
+        display: grid;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        grid-template-columns: 1, auto;
+        grid-template-rows: repeat(3, 305px);
+        justify-content: center;
+        margin-left: 384px;
+    }
+    .sedan-section{
+        background-color: hsl(31, 77%, 52%);
+        grid-column: 1;
+        grid-row: 1/2;
+        border-radius: 10px 10px 0 0;
+    }
+    .suvs-section{
+        background-color: hsl(184, 100%, 22%);
+        grid-column: 1;
+        grid-row: 2/3;
+    }
+    .luxury-section{
+        background-color: hsl(179, 100%, 13%);
+        grid-column: 1;
+        grid-row: 3/4;
+        border-radius: 0 0 10px 10px;
+    }
+    p{
+        padding-bottom: 35px;
+        font-size: 11px;
+    }
+
+}
